@@ -1,0 +1,1559 @@
+[
+    {
+        "id": "6f0f8ea7565ecc34",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "00d909f8ac033e34",
+        "type": "group",
+        "z": "6f0f8ea7565ecc34",
+        "name": "Update Alert List",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "6eafa018448deba9",
+            "e9e4eff9ad272ad8"
+        ],
+        "x": 1814,
+        "y": 179,
+        "w": 352,
+        "h": 82
+    },
+    {
+        "id": "4de785920e11e976",
+        "type": "group",
+        "z": "6f0f8ea7565ecc34",
+        "name": "Add Alert to list",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "de8ecc7664986d4b"
+        ],
+        "x": 1374,
+        "y": 239,
+        "w": 212,
+        "h": 82
+    },
+    {
+        "id": "567b24662020c621",
+        "type": "group",
+        "z": "6f0f8ea7565ecc34",
+        "name": "Confirm Alert",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a5fc5ee7a684d730",
+            "e5c1fa22d0104ecb"
+        ],
+        "x": 1374,
+        "y": 339,
+        "w": 292,
+        "h": 142
+    },
+    {
+        "id": "d3cfcce5174c476c",
+        "type": "ui_tab",
+        "name": "RoboCurățelul",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9bfe70e1520cb4df",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#1afbff",
+                "baseFont": "Times New Roman,Times,serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#1afbff",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#1afbff",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#66fcff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#1afbff",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Times New Roman,Times,serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "62047f4f7888e7bd",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "bdfb7f4d0b6a58ca",
+        "type": "ui_group",
+        "name": " ",
+        "tab": "d3cfcce5174c476c",
+        "order": 1,
+        "disp": false,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "51e04817b87a09ef",
+        "type": "ui_group",
+        "name": "Controale",
+        "tab": "d3cfcce5174c476c",
+        "order": 2,
+        "disp": false,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8ea9a6c439a87a4d",
+        "type": "ui_group",
+        "name": "Notificări",
+        "tab": "d3cfcce5174c476c",
+        "order": 3,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": "notif"
+    },
+    {
+        "id": "5a3cbf8bb4bcfd60",
+        "type": "ui_group",
+        "name": "Harta",
+        "tab": "d3cfcce5174c476c",
+        "order": 4,
+        "disp": false,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a0216162f4f10371",
+        "type": "ui_spacer",
+        "z": "6f0f8ea7565ecc34",
+        "name": "spacer",
+        "group": "51e04817b87a09ef",
+        "order": 7,
+        "width": "1",
+        "height": "2"
+    },
+    {
+        "id": "394c9f0d98e2b5e3",
+        "type": "http in",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "url": "/camera",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 220,
+        "wires": [
+            [
+                "835302d4bc46ec1b"
+            ]
+        ]
+    },
+    {
+        "id": "835302d4bc46ec1b",
+        "type": "file in",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "filename": "/tmp/camera.jpg",
+        "filenameType": "str",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 380,
+        "y": 220,
+        "wires": [
+            [
+                "19a6ea1bc7bbbc00"
+            ]
+        ]
+    },
+    {
+        "id": "03f4d829f499e4a4",
+        "type": "http response",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 890,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "19a6ea1bc7bbbc00",
+        "type": "change",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "headers[\"Content-Type\"]",
+                "pt": "msg",
+                "to": "image/jpeg",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 220,
+        "wires": [
+            [
+                "03f4d829f499e4a4"
+            ]
+        ]
+    },
+    {
+        "id": "7a97602552e77183",
+        "type": "ui_template",
+        "z": "6f0f8ea7565ecc34",
+        "group": "bdfb7f4d0b6a58ca",
+        "name": "Camera Feed",
+        "order": 0,
+        "width": "9",
+        "height": "16",
+        "format": "<div style=\"display: flex; flex-direction: column; align-items: center; padding: 30px; background-color: #f9f9f9; height: 100vh; box-sizing: border-box;\">\n\n    <!-- Cameră Live + Procesată -->\n    <div style=\"display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;\">\n        <!-- Imagine Live -->\n        <div\n            style=\"background: white; padding: 18px; border-radius: 14px; box-shadow: 0 3px 8px rgba(0,0,0,0.08); text-align: center; border: 1px solid #ccc;\">\n            <h2 style=\"font-size: 18px; margin-bottom: 12px; color: #444;\">Camera Live</h2>\n            <img id=\"camera_output\" src=\"/camera\" style=\"width: 375px; height: 281px; border-radius: 8px; border: 1px solid #bbb;\">\n        </div>\n\n        <!-- Imagine Procesată -->\n        <div\n            style=\"background: white; padding: 18px; border-radius: 14px; box-shadow: 0 3px 8px rgba(0,0,0,0.08); text-align: center; border: 1px solid #ccc;\">\n            <h2 style=\"font-size: 18px; margin-bottom: 12px; color: #444;\">Camera Procesată</h2>\n            <img id=\"camera_output_bin\" src=\"/camerabin\" style=\"width: 375px; height: 281px; border-radius: 8px; border: 1px solid #bbb;\">\n        </div>\n    </div>\n</div>\n\n<script>\n    var cameraInterval = setInterval(function () {\n        var timestamp = new Date().getTime();\n        document.getElementById(\"camera_output\").src = \"/camera?\" + timestamp;\n        document.getElementById(\"camera_output_bin\").src = \"/camerabin?\" + timestamp;\n    }, 100);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 200,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "395b842d85c59602",
+        "type": "inject",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 180,
+        "wires": [
+            [
+                "af2596acf1131dd4"
+            ]
+        ]
+    },
+    {
+        "id": "af2596acf1131dd4",
+        "type": "file",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "filename": "/tmp/camera.jpg",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 380,
+        "y": 180,
+        "wires": [
+            [
+                "0396a934861aeb84"
+            ]
+        ]
+    },
+    {
+        "id": "7bc3a56ac6dc52d1",
+        "type": "http in",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "url": "/camerabin",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 260,
+        "wires": [
+            [
+                "5ce07c2fe481e437"
+            ]
+        ]
+    },
+    {
+        "id": "5ce07c2fe481e437",
+        "type": "file in",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "filename": "/tmp/camerabin.jpg",
+        "filenameType": "str",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 390,
+        "y": 260,
+        "wires": [
+            [
+                "a8f3f0aae24f1c5f"
+            ]
+        ]
+    },
+    {
+        "id": "d2673872f3bf84cd",
+        "type": "http response",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 890,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "a8f3f0aae24f1c5f",
+        "type": "change",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "headers[\"Content-Type\"]",
+                "pt": "msg",
+                "to": "image/jpeg",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 260,
+        "wires": [
+            [
+                "d2673872f3bf84cd"
+            ]
+        ]
+    },
+    {
+        "id": "0396a934861aeb84",
+        "type": "file",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "filename": "/tmp/camerabin.jpg",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 590,
+        "y": 180,
+        "wires": [
+            [
+                "2975d7a3b1115cae"
+            ]
+        ]
+    },
+    {
+        "id": "6c609ec592f92223",
+        "type": "mqtt out",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "topic": "forward",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "62047f4f7888e7bd",
+        "x": 420,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "35f5306acfddee7a",
+        "type": "ui_template",
+        "z": "6f0f8ea7565ecc34",
+        "group": "51e04817b87a09ef",
+        "name": "Controller Forward",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "format": "<div style=\"width: 80%; padding: 20px; text-align: center;\">\n    <h1 style=\"font-size: 28px; font-weight: bold; color: #333; margin-bottom: 30px;\">Controale</h1>\n</div>\n\n<script>\n    (function(scope) {\n        scope.sendOnPress = function() {\n            scope.send({payload: \"pressed\"});\n        };\n\n        scope.sendOnRelease = function() {\n            scope.send({payload: \"released\"});\n        };\n    })(scope);\n</script>\n\n<style>\n    .modern-button {\n        font-size: 32px !important;\n        background: linear-gradient(145deg, rgb(37, 253, 233), rgb(20, 200, 220));\n        color: #002e3c;\n        border: none;\n        border-radius: 12px;\n        padding: 14px 18px !important;\n        /* mai mult padding vertical */\n        box-shadow: 0 6px 14px rgba(0, 100, 200, 0.3);\n        transition: all 0.2s ease-in-out;\n        min-width: 20px !important;\n        min-height: 40px !important;\n        /* adaugă înălțime minimă */\n        font-weight: bold;\n        margin-bottom: 5px;\n        display: inline-flex;\n        align-items: center;\n        justify-content: center;\n    }\n\n    .modern-button:hover {\n        background: linear-gradient(145deg, rgb(20, 200, 220), rgb(37, 253, 233));\n        box-shadow: 0 10px 24px rgba(0, 100, 200, 0.5);\n    }\n\n    .modern-button:active {\n        background-color: rgb(25, 180, 200);\n        transform: scale(0.95);\n        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);\n    }\n</style>\n\n<md-button class=\"modern-button\"\n           ng-mousedown=\"sendOnPress()\"\n           ng-mouseup=\"sendOnRelease()\">\n    ↑\n</md-button>\n\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 210,
+        "y": 520,
+        "wires": [
+            [
+                "6c609ec592f92223"
+            ]
+        ]
+    },
+    {
+        "id": "1c8c5d8ef276d297",
+        "type": "mqtt out",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "topic": "left",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "62047f4f7888e7bd",
+        "x": 430,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "fada6445a2ee2b74",
+        "type": "ui_template",
+        "z": "6f0f8ea7565ecc34",
+        "group": "51e04817b87a09ef",
+        "name": "Controller Left",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "format": "<script>\n    (function(scope) {\n        scope.sendOnPress = function() {\n            scope.send({ payload: \"pressed\" });\n        };\n\n        scope.sendOnRelease = function() {\n            scope.send({ payload: \"released\" });\n        };\n    })(scope);\n</script>\n\n<style>\n    .modern-button {\n        font-size: 36px;\n        background: linear-gradient(145deg, rgb(37, 253, 233), rgb(20, 200, 220));\n        color: #002e3c;\n        border: none;\n        border-radius: 20px;\n        padding: 20px 36px;\n        box-shadow: 0 8px 20px rgba(0, 100, 200, 0.35);\n        transition: all 0.2s ease-in-out;\n        min-width: 100px;\n        font-weight: bold;\n        cursor: pointer;\n    }\n\n    .modern-button:hover {\n        background: linear-gradient(145deg, rgb(20, 200, 220), rgb(37, 253, 233));\n        box-shadow: 0 10px 24px rgba(0, 100, 200, 0.5);\n    }\n\n    .modern-button:active {\n        background-color: rgb(25, 180, 200);\n        transform: scale(0.95);\n        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);\n    }\n</style>\n\n<md-button \n    class=\"modern-button\" \n    ng-mousedown=\"sendOnPress()\" \n    ng-mouseup=\"sendOnRelease()\">\n    ←\n</md-button>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 200,
+        "y": 560,
+        "wires": [
+            [
+                "628ed40955dc49b7"
+            ]
+        ]
+    },
+    {
+        "id": "628ed40955dc49b7",
+        "type": "mqtt out",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "topic": "right",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "62047f4f7888e7bd",
+        "x": 550,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "739008e2191c3288",
+        "type": "ui_template",
+        "z": "6f0f8ea7565ecc34",
+        "group": "51e04817b87a09ef",
+        "name": "Controller Right",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "format": "<script>\n    (function(scope) {\n        scope.sendOnPress = function() {\n            scope.send({ payload: \"pressed\" });\n        };\n\n        scope.sendOnRelease = function() {\n            scope.send({ payload: \"released\" });\n        };\n    })(scope);\n</script>\n\n<style>\n    .modern-button {\n        font-size: 36px;\n        background: linear-gradient(145deg, rgb(37, 253, 233), rgb(20, 200, 220));\n        color: #002e3c;\n        border: none;\n        border-radius: 20px;\n        padding: 20px 36px;\n        box-shadow: 0 8px 20px rgba(0, 100, 200, 0.35);\n        transition: all 0.2s ease-in-out;\n        min-width: 100px;\n        font-weight: bold;\n        cursor: pointer;\n    }\n\n    .modern-button:hover {\n        background: linear-gradient(145deg, rgb(20, 200, 220), rgb(37, 253, 233));\n        box-shadow: 0 10px 24px rgba(0, 100, 200, 0.5);\n    }\n\n    .modern-button:active {\n        background-color: rgb(25, 180, 200);\n        transform: scale(0.95);\n        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);\n    }\n</style>\n\n<md-button \n    class=\"modern-button\" \n    ng-mousedown=\"sendOnPress()\" \n    ng-mouseup=\"sendOnRelease()\">\n    →\n</md-button>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 200,
+        "y": 600,
+        "wires": [
+            [
+                "1c8c5d8ef276d297"
+            ]
+        ]
+    },
+    {
+        "id": "57e5c021e2100e44",
+        "type": "mqtt out",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "topic": "down",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "62047f4f7888e7bd",
+        "x": 570,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "3ba6c2da43f83834",
+        "type": "ui_template",
+        "z": "6f0f8ea7565ecc34",
+        "group": "51e04817b87a09ef",
+        "name": "Controller Down",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "format": "<script>\n    (function(scope) {\n        scope.sendOnPress = function() {\n            scope.send({ payload: \"pressed\" });\n        };\n\n        scope.sendOnRelease = function() {\n            scope.send({ payload: \"released\" });\n        };\n    })(scope);\n</script>\n\n<style>\n    .modern-button {\n        font-size: 36px;\n        background: linear-gradient(145deg, rgb(37, 253, 233), rgb(20, 200, 220));\n        color: #002e3c;\n        border: none;\n        border-radius: 20px;\n        padding: 20px 36px;\n        box-shadow: 0 8px 20px rgba(0, 100, 200, 0.35);\n        transition: all 0.2s ease-in-out;\n        min-width: 100px;\n        font-weight: bold;\n        cursor: pointer;\n    }\n\n    .modern-button:hover {\n        background: linear-gradient(145deg, rgb(20, 200, 220), rgb(37, 253, 233));\n        box-shadow: 0 10px 24px rgba(0, 100, 200, 0.5);\n    }\n\n    .modern-button:active {\n        background-color: rgb(25, 180, 200);\n        transform: scale(0.95);\n        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);\n    }\n</style>\n\n<md-button class=\"modern-button\" ng-mousedown=\"sendOnPress()\" ng-mouseup=\"sendOnRelease()\">\n    ↓\n</md-button>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 200,
+        "y": 640,
+        "wires": [
+            [
+                "57e5c021e2100e44"
+            ]
+        ]
+    },
+    {
+        "id": "8c5f5f908182acef",
+        "type": "ui_dropdown",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "label": "Mod Select",
+        "tooltip": "",
+        "place": "Mod",
+        "group": "51e04817b87a09ef",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Manual",
+                "value": "manual",
+                "type": "str"
+            },
+            {
+                "label": "Aspirare Autonom",
+                "value": "aspirare",
+                "type": "str"
+            },
+            {
+                "label": "Perie Autonom",
+                "value": "perie",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "switch-manual",
+        "x": 430,
+        "y": 700,
+        "wires": [
+            [
+                "80b7f16f507a51d2",
+                "7f389fa44d26a524"
+            ]
+        ]
+    },
+    {
+        "id": "80b7f16f507a51d2",
+        "type": "mqtt out",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "topic": "mode",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "62047f4f7888e7bd",
+        "x": 650,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "6eafa018448deba9",
+        "type": "ui_template",
+        "z": "6f0f8ea7565ecc34",
+        "g": "00d909f8ac033e34",
+        "group": "8ea9a6c439a87a4d",
+        "name": "Alerte",
+        "order": 0,
+        "width": "6",
+        "height": "15",
+        "format": "<div style=\"width: 80%; padding: 20px; text-align: center;\">\n    <h1 style=\"font-size: 28px; font-weight: bold; color: #333; margin-bottom: 30px;\">Notificări</h1>\n</div>\n\n<div id=\"list_of_alerts\"></div>    \n\n<script>\n    (function(scope){\n        scope.alert_onConfirm = function(id) {\n            alert(id)\n            alert(scope)\n        }\n\n        scope.$watch('msg', function(msg){\n            var template = `\n            <div class=\"alert-container\" style=\"background-color:#{type_color}33; border-color:#{type_color}55\">\n                <div style=\"display: flex; align-items: center; margin-bottom: 10px;\">\n                    <i class=\"material-icons\" style=\"font-size: 24px; margin-right: 10px;\">{type_icon}</i>\n                    <span style=\"font-weight: bold; font-size: 16px;\">{title}</span>\n                </div>\n                <div style=\"margin-bottom: 10px; color: #444;\">\n                    {description}\n                </div>\n                <div>\n                    <button style=\"\n                        background-color: #{type_color};\n                        color: white;\n                        border: none;\n                        padding: 8px 16px;\n                        border-radius: 4px;\n                        cursor: pointer;\n                        display: flex;\n                        align-items: center;\n                        font-size: 14px;\n                    \" onclick=\"(() => { \n                        fetch('/remove_notification', { \n                            method: 'POST', \n                            body: JSON.stringify({ id: {ID} }), \n                            headers: { 'Content-type': 'application/json;charset=UTF-8' } \n                        }) \n                    })()\">\n                        <i class=\"material-icons\" style=\"font-size: 20px; margin-right: 6px;\">check</i>\n                        Confirmă\n                    </button>\n                </div>\n            </div>`;\n            \n            var html_alerts = document.getElementById(\"list_of_alerts\");\n            html_alerts.innerHTML = \"\";\n\n            var json_alerts = JSON.parse(msg.payload);\n            for(let alert_object of json_alerts) {\n                var a = template;\n                \n                if(alert_object.type == \"warn\") {\n                    a = a.replaceAll(\"{type_color}\", \"FFAA00\");\n                    a = a.replaceAll(\"{type_icon}\", \"warning\");\n                } else {\n                    a = a.replaceAll(\"{type_color}\", \"FF0000\");\n                    a = a.replaceAll(\"{type_icon}\", \"info\");\n                }\n                \n                a = a.replaceAll(\"{title}\", alert_object.title);\n                a = a.replaceAll(\"{description}\", alert_object.description);\n                a = a.replaceAll(\"{ID}\", alert_object.id);\n                html_alerts.innerHTML += a;\n            }\n        })\n    })(scope)\n</script>\n\n<style>\n    .alert-container {\n        padding: 16px;\n        margin-top: 5px;\n        margin-bottom: 5px;\n        border-radius: 6px;\n        border-style: solid;\n    }\n</style>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 2090,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d6ccfb14e65cb2b7",
+        "type": "function",
+        "z": "6f0f8ea7565ecc34",
+        "name": "debug-send-alert",
+        "func": "\nmsg.payload = {\n    type: \"alert\",\n    id: Math.floor(Math.random() * 1000000),\n    title: \"Aceasta este o alerta\",\n    description: \"E o alerta\"\n}\n\nmsg.payload = JSON.stringify(msg.payload)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 260,
+        "wires": [
+            [
+                "de8ecc7664986d4b"
+            ]
+        ]
+    },
+    {
+        "id": "de8ecc7664986d4b",
+        "type": "function",
+        "z": "6f0f8ea7565ecc34",
+        "g": "4de785920e11e976",
+        "name": "setup-load-alert",
+        "func": "var new_alert = JSON.parse(msg.payload)\n\nvar alerts = JSON.parse(global.get(\"alerts\"))\nalerts.push(new_alert)\nalerts = JSON.stringify(alerts)\nglobal.set(\"alerts\", alerts)\n\nvar msg_alerts = {}\nmsg_alerts.payload = [new_alert.type]\n\nreturn [msg_alerts, msg_alerts];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 280,
+        "wires": [
+            [
+                "e9e4eff9ad272ad8"
+            ],
+            [
+                "2d743e49ac2c2256"
+            ]
+        ]
+    },
+    {
+        "id": "2975d7a3b1115cae",
+        "type": "change",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "alerts",
+                "pt": "global",
+                "to": "[]",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 180,
+        "wires": [
+            [
+                "e9e4eff9ad272ad8"
+            ]
+        ]
+    },
+    {
+        "id": "e9e4eff9ad272ad8",
+        "type": "change",
+        "z": "6f0f8ea7565ecc34",
+        "g": "00d909f8ac033e34",
+        "name": "Set alerts to state",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "alerts",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1930,
+        "y": 220,
+        "wires": [
+            [
+                "6eafa018448deba9"
+            ]
+        ]
+    },
+    {
+        "id": "2820690f8d2de14e",
+        "type": "function",
+        "z": "6f0f8ea7565ecc34",
+        "name": "debug-send-warning",
+        "func": "\nmsg.payload = {\n    type: \"warn\",\n    id: Math.floor(Math.random() * 1000000),\n    title: \"Traseu terminat.\",\n    description: \"E un warning\"\n}\n\nmsg.payload = JSON.stringify(msg.payload)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 300,
+        "wires": [
+            [
+                "de8ecc7664986d4b"
+            ]
+        ]
+    },
+    {
+        "id": "e5c1fa22d0104ecb",
+        "type": "http in",
+        "z": "6f0f8ea7565ecc34",
+        "g": "567b24662020c621",
+        "name": "",
+        "url": "/remove_notification",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1510,
+        "y": 380,
+        "wires": [
+            [
+                "a5fc5ee7a684d730"
+            ]
+        ]
+    },
+    {
+        "id": "a5fc5ee7a684d730",
+        "type": "function",
+        "z": "6f0f8ea7565ecc34",
+        "g": "567b24662020c621",
+        "name": "find_and_remove_notification",
+        "func": "var alerts = JSON.parse(global.get(\"alerts\"))\n\nnode.warn(alerts)\n\nvar go_to_manual = false;\nfor(const alert of alerts) {\n    node.warn(alert)\n    if(alert.title === \"Traseu terminat.\") {\n        go_to_manual = true;\n        break;\n    }\n}\nnode.warn(go_to_manual)\n\nalerts = alerts.filter(element => element.id !== msg.payload.id);\nglobal.set(\"alerts\", JSON.stringify(alerts))\n\nif(go_to_manual) {\n    msg.payload = \"manual\";\n} else {\n    msg.payload = \"not manual\";\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 440,
+        "wires": [
+            [
+                "e9e4eff9ad272ad8",
+                "c669182469de40ca"
+            ]
+        ]
+    },
+    {
+        "id": "0d2b229bcbc4d1c2",
+        "type": "http in",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "url": "/warn",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "e39f0f19fd29afeb"
+            ]
+        ]
+    },
+    {
+        "id": "e39f0f19fd29afeb",
+        "type": "file in",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "filename": "/home/admin/Documents/python_backend/warning.mp3",
+        "filenameType": "str",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 510,
+        "y": 120,
+        "wires": [
+            [
+                "bb06e5a4ebcc2457"
+            ]
+        ]
+    },
+    {
+        "id": "bb06e5a4ebcc2457",
+        "type": "change",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "headers[\"Content-Type\"]",
+                "pt": "msg",
+                "to": "audio/mpeg",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 120,
+        "wires": [
+            [
+                "ad09351b53e28507"
+            ]
+        ]
+    },
+    {
+        "id": "ad09351b53e28507",
+        "type": "http response",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1110,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "4ff2447ff3bb653d",
+        "type": "http in",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "url": "/alert",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 80,
+        "wires": [
+            [
+                "04ae0e19f9d9ff06"
+            ]
+        ]
+    },
+    {
+        "id": "04ae0e19f9d9ff06",
+        "type": "file in",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "filename": "/home/admin/Documents/python_backend/error.mp3",
+        "filenameType": "str",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 500,
+        "y": 80,
+        "wires": [
+            [
+                "145a15a3b93d9810"
+            ]
+        ]
+    },
+    {
+        "id": "145a15a3b93d9810",
+        "type": "change",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "headers[\"Content-Type\"]",
+                "pt": "msg",
+                "to": "audio/mpeg",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 80,
+        "wires": [
+            [
+                "f691b6119d50bc06"
+            ]
+        ]
+    },
+    {
+        "id": "f691b6119d50bc06",
+        "type": "http response",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1110,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "2d743e49ac2c2256",
+        "type": "ui_template",
+        "z": "6f0f8ea7565ecc34",
+        "group": "8ea9a6c439a87a4d",
+        "name": "Sunete",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "format": "<script>\n    (function(scope){\n        scope.$watch('msg', function(msg){\n            for(let payload of msg.payload) {\n                let a = new Audio(\"/\" + payload)\n                a.play()\n                console.log(msg.payload)\n            }\n        })\n    })(scope)\n</script>\n",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1660,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a646b4e04160c261",
+        "type": "inject",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1040,
+        "y": 260,
+        "wires": [
+            [
+                "d6ccfb14e65cb2b7"
+            ]
+        ]
+    },
+    {
+        "id": "f5f8f0d7579b79be",
+        "type": "inject",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1040,
+        "y": 300,
+        "wires": [
+            [
+                "2820690f8d2de14e"
+            ]
+        ]
+    },
+    {
+        "id": "611069350f99d5ed",
+        "type": "mqtt in",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "topic": "send_alerts_warnings",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "62047f4f7888e7bd",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 980,
+        "y": 360,
+        "wires": [
+            [
+                "4c1b2d910849ba50",
+                "13d675f0db706654"
+            ]
+        ]
+    },
+    {
+        "id": "4c1b2d910849ba50",
+        "type": "debug",
+        "z": "6f0f8ea7565ecc34",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1280,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "4eec9f08eb5e46b5",
+        "type": "mqtt in",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "topic": "set_mode",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "62047f4f7888e7bd",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 700,
+        "wires": [
+            [
+                "8c5f5f908182acef"
+            ]
+        ]
+    },
+    {
+        "id": "87723e60e6250bbe",
+        "type": "inject",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0",
+        "topic": "",
+        "payload": "manual",
+        "payloadType": "str",
+        "x": 180,
+        "y": 760,
+        "wires": [
+            [
+                "8c5f5f908182acef"
+            ]
+        ]
+    },
+    {
+        "id": "fccb845225bc6787",
+        "type": "ui_switch",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "label": "Manual Aspirator",
+        "tooltip": "",
+        "group": "51e04817b87a09ef",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "switch-manual",
+        "x": 210,
+        "y": 340,
+        "wires": [
+            [
+                "cfbf7c912ad7daae"
+            ]
+        ]
+    },
+    {
+        "id": "fb1cfe14d17951f0",
+        "type": "ui_switch",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "label": "Manual Perie",
+        "tooltip": "",
+        "group": "51e04817b87a09ef",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "switch-manual",
+        "x": 190,
+        "y": 380,
+        "wires": [
+            [
+                "989c28fd000f5c3b"
+            ]
+        ]
+    },
+    {
+        "id": "cfbf7c912ad7daae",
+        "type": "mqtt out",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "topic": "aspirator_manual",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "62047f4f7888e7bd",
+        "x": 550,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "989c28fd000f5c3b",
+        "type": "mqtt out",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "topic": "perie_manual",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "62047f4f7888e7bd",
+        "x": 380,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "528e6ed1936bc7a0",
+        "type": "ui_template",
+        "z": "6f0f8ea7565ecc34",
+        "group": "5a3cbf8bb4bcfd60",
+        "name": "",
+        "order": 0,
+        "width": "7",
+        "height": "8",
+        "format": "<div>\n    <style>\n        .grid-title {\n            text-align: center;\n            font-size: 20px;\n            font-weight: bold;\n            margin-bottom: 10px;\n            margin-top: 35px;\n        }\n\n        .grid-container {\n            display: grid;\n            grid-template-columns: repeat(7, 1fr);\n            gap: 5px;\n            width: 100%;\n            height: auto;         /* permite creșterea grilei */\n            overflow: visible;    /* elimină scroll-ul */\n        }\n\n        .grid-item {\n            border: 1px solid #000;\n            padding: 10px;\n            text-align: center;\n            background-color: #f0f0f0;\n            font-weight: bold;\n        }\n    </style>\n\n    <div class=\"grid-title\">TRASEU</div>\n\n    <div class=\"grid-container\">\n        <div class=\"grid-item\" ng-repeat=\"num in msg.payload track by $index\">{{num}}</div>\n    </div>\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1180,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ec32106b85f34f59",
+        "type": "mqtt in",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "topic": "update_harta",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "62047f4f7888e7bd",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1190,
+        "y": 700,
+        "wires": [
+            [
+                "528e6ed1936bc7a0"
+            ]
+        ]
+    },
+    {
+        "id": "73bbddf7f98b703e",
+        "type": "ui_ui_control",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "events": "all",
+        "x": 1000,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f389fa44d26a524",
+        "type": "switch",
+        "z": "6f0f8ea7565ecc34",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "manual",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "aspirare",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "perie",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 650,
+        "y": 760,
+        "wires": [
+            [
+                "63ccf2a0c73ac266"
+            ],
+            [
+                "63ccf2a0c73ac266"
+            ],
+            [
+                "fe030ee36db2149b"
+            ]
+        ]
+    },
+    {
+        "id": "fe030ee36db2149b",
+        "type": "function",
+        "z": "6f0f8ea7565ecc34",
+        "name": "ShowHarta",
+        "func": "msg.payload = {\"group\":{\"show\":[\"RoboCurățelul_Harta\"]}}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 800,
+        "wires": [
+            [
+                "73bbddf7f98b703e",
+                "9dea59f96b72c1c4"
+            ]
+        ]
+    },
+    {
+        "id": "63ccf2a0c73ac266",
+        "type": "function",
+        "z": "6f0f8ea7565ecc34",
+        "name": "HideHarta",
+        "func": "msg.payload = {\"group\":{\"hide\":[\"RoboCurățelul_Harta\"]}}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 740,
+        "wires": [
+            [
+                "73bbddf7f98b703e"
+            ]
+        ]
+    },
+    {
+        "id": "9dea59f96b72c1c4",
+        "type": "function",
+        "z": "6f0f8ea7565ecc34",
+        "name": "ResetHarta",
+        "func": "msg.payload = Array(7 * 7).fill('⠀');\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 800,
+        "wires": [
+            [
+                "528e6ed1936bc7a0"
+            ]
+        ]
+    },
+    {
+        "id": "b18b084cdcecb690",
+        "type": "link in",
+        "z": "6f0f8ea7565ecc34",
+        "name": "link in 1",
+        "links": [
+            "35a0a761fe4c5230"
+        ],
+        "x": 205,
+        "y": 820,
+        "wires": [
+            [
+                "8c5f5f908182acef"
+            ]
+        ]
+    },
+    {
+        "id": "35a0a761fe4c5230",
+        "type": "link out",
+        "z": "6f0f8ea7565ecc34",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "b18b084cdcecb690"
+        ],
+        "x": 1905,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "c669182469de40ca",
+        "type": "function",
+        "z": "6f0f8ea7565ecc34",
+        "name": "Reset state",
+        "func": "if(msg.payload == \"manual\") {\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1770,
+        "y": 440,
+        "wires": [
+            [
+                "35a0a761fe4c5230"
+            ]
+        ]
+    },
+    {
+        "id": "13d675f0db706654",
+        "type": "function",
+        "z": "6f0f8ea7565ecc34",
+        "name": "setup-object-alert",
+        "func": "if(msg.payload.title === \"Traseu terminat.\") {\n    var alerts = JSON.parse(global.get(\"alerts\"))\n    for(const alert of alerts) {\n        if(alert.title === \"Traseu terminat.\") {\n            return;\n        }\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 360,
+        "wires": [
+            [
+                "de8ecc7664986d4b"
+            ]
+        ]
+    },
+    {
+        "id": "13f82f977cef9f3e",
+        "type": "ui_template",
+        "z": "6f0f8ea7565ecc34",
+        "group": "51e04817b87a09ef",
+        "name": "",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n/* Schimbă culoarea de fundal pentru switch */\n.switch-manual md-switch .md-thumb {\n    background-color: #e53935 !important; \n}\n.switch-manual md-switch.md-checked .md-bar {\n    background-color: #A5D6A7 !important; /* Verde deschis ON */\n}\n.switch-manual md-switch .md-bar {\n    background-color: #ccc !important; /* Gri OFF */\n}\n.switch-manual md-switch.md-checked .md-thumb {\n    background-color: #2E7D32 !important; /* Verde închis când e activat */\n}\n\n/* Text label - opțional */\n.switch-manual {\n    font-size: 16px;\n    font-weight: bold;\n    color: #333;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 180,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    }
+]
